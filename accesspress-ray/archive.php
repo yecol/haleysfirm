@@ -15,15 +15,16 @@ $accesspress_ray_settings = get_option( 'accesspress_ray_options', $accesspress_
 <div class="ak-container">
 	<section id="primary" class="content-area yb-content-table">
 		<main id="main" class="site-main clearfix">
-		
+
 		<?php if ( have_posts() ) : ?>
-
-			<?php if ( !is_category() ) : ?>
-
 			<header class="page-header">
 				<h1 class="page-title">
 					<?php
-						if ( is_tag() ) :
+
+						if ( is_category() ) :
+							single_cat_title();
+
+						elseif ( is_tag() ) :
 							single_tag_title();
 
 						elseif ( is_author() ) :
@@ -79,8 +80,6 @@ $accesspress_ray_settings = get_option( 'accesspress_ray_options', $accesspress_
 					endif;
 				?>
 			</header><!-- .page-header -->
-
-			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php 

@@ -313,7 +313,7 @@ textarea {
 Links
 --------------------------------------------------------------*/
 a {
-	color: #23a38f;
+	color: #11b06f;
 	text-decoration: none;
 	transition:all 0.3s ease-in-out;
 	-webkit-transition:all 0.3s ease-in-out;
@@ -503,8 +503,10 @@ article.hentry .entry-footer > span{
 }
 .page-header .page-title{
 	color: #666;
-	background: url(images/title-bg.png) repeat-x left bottom;
 	padding-bottom: 15px;
+	text-align: center;
+	border-bottom: 2px solid #efefef;
+	margin-bottom: 40px;
 }
 .posted-on:before{
 	content: "\f073";
@@ -996,7 +998,7 @@ header.site-header {
 }
 #site-navigation .menu > ul > li > a{
     border-left: 1px solid #ececec;
-    color: #23a38f;
+    color: #333;
     display: inline-block;
     font-size: 16px;
     font-weight: 300;
@@ -1023,6 +1025,16 @@ header.site-header {
     top:-5px;
     width: 100%;
 }
+
+#site-navigation .menu > ul > li:hover, 
+#site-navigation .menu > ul > li.current_page_item > a,
+#site-navigation .menu > ul > li.current-menu-item > a,
+#site-navigation .menu > ul > li.current_page_ancestor > a,
+#site-navigation .menu > ul > li.current-menu-ancestor > a{
+    color: #f0563d;
+}
+
+
 .logo-center #site-navigation .menu > ul > li:hover > a:before, 
 .logo-center #site-navigation .menu > ul > li.current_page_item > a:before,
 .logo-center #site-navigation .menu > ul > li.current_page_ancestor > a:before,
@@ -1092,7 +1104,7 @@ TOP-FOOTER
 	display: none;
 }
 #top-footer{
-	background: #23a38f;
+	background: #666;
 	color:#ffffff;
 	font-size: 14px;
 	font-weight: 300;
@@ -1176,7 +1188,7 @@ TOP-FOOTER
 MIDDLE-FOOTER
 -------------------------------*/
 footer #middle-footer{
-	background: #1c8776;
+	background: #666;
 	color:#ffffff;
 	font-size: 14px;
 	font-weight: 300;

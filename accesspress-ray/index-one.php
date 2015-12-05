@@ -36,10 +36,12 @@ $accesspress_ray_blog_title = $accesspress_ray_settings['blog_title'];
 						<p class="welcome-content"><?php echo accesspress_ray_excerpt( get_the_content() , $accesspress_ray_call_to_action_post_char ) ?></p>
 						<?php if(!empty($accesspress_ray_settings['call_to_action_post_readmore'])){?>
 							<a href="<?php the_permalink(); ?>" class="read-more bttn"><?php echo esc_html($accesspress_ray_settings['call_to_action_post_readmore']); ?></a>
-						<?php } 
+						<?php }
+						
 					}else{ 
 						the_content();
 					} ?>
+						<a href="http://haleysfirm.com/2015/12/05/2016-recruit/" class="read-more bttn"> 2016年国际营火热报名中 </a>
 					
 					</div>
 					
@@ -452,74 +454,6 @@ if(is_active_sidebar( 'textblock-1' ) || is_active_sidebar( 'textblock-2' ) || i
 	endif; 
 endif;
 ?>
-
-<section id="bottom2-section" class="clients-say-section clearfix">
-	<div class="ak-container">
-		<?php if(!empty($testimonial_category)) {	?>
-			 		<h3 class="roboto-light main-title"><?php echo get_cat_name($testimonial_category); ?></h3>
-						<?php
-							$loop2 = new WP_Query( array(
-				                'cat' => $testimonial_category,
-				                'posts_per_page' => 5,
-				            )); ?>
-				        <div class="testimonial-wrap">
-					        <div class="testimonial-slider">
-					        <?php while ($loop2->have_posts()) : $loop2->the_post(); ?>
-
-					        	<div class="testimonial-slide">
-						        	<div class="testimonial-list clearfix">
-						        		<div class="testimonial-thumbnail">
-						        		<?php 
-			                            if(has_post_thumbnail()){
-			                            the_post_thumbnail('thumbnail'); 
-			                            }else{ ?>
-			                                <img src="<?php echo get_template_directory_uri(); ?>/images/testimonial-dummy.jpg" alt="no-image"/>
-			                            <?php }?>
-						        		</div>
-
-						        		<div class="testimonial-excerpt">
-						        			<?php echo accesspress_ray_excerpt( get_the_content() , 140 ) ?>
-						        		</div>
-						        	</div>
-								<div class="testimoinal-client-name"><?php the_title(); ?></div>
-								</div>
-			                <?php endwhile; ?>
-							</div>
-						</div>
-
-				        <?php wp_reset_postdata(); 
-				        
-						}else{ 
-						?>
-						<h3 class="widget-title roboto-light"><?php _e('What our Clients Say', 'accesspress_ray') ?></h3>
-						<div class="testimonial-wrap">
-							<div class="testimonial-slider">
-								<div class="testimonial-slide">
-						        	<div class="testimonial-list clearfix">
-						        		<div class="testimonial-thumbnail">
-						        		<img src="<?php echo get_template_directory_uri(); ?>/images/demo/Yanetxys-Torreblanca.jpg">
-						        		</div>
-
-						        		<div class="testimonial-excerpt"><?php _e('Thanks for delivering top quality services to your clients. It just takes a minute to get an answer from you when in difficulties.', 'accesspress_ray') ?></div>
-						        	</div>
-									<div class="testimoinal-client-name"><?php _e('Yanetxys Torreblanca', 'accesspress_ray') ?></div>
-								</div>
-
-								<div class="testimonial-slide">
-						        	<div class="testimonial-list clearfix">
-						        		<div class="testimonial-thumbnail">
-						        		<img src="<?php echo get_template_directory_uri(); ?>/images/demo/David-Soriano.jpg">
-						        		</div>
-
-						        		<div class="testimonial-excerpt"><?php _e('Thank you very much the support team AccessPress Ray for service, are really wonderful in their care and in the resolution of the problem.', 'accesspress_ray') ?></div>
-						        	</div>
-									<div class="testimoinal-client-name"><?php _e('David Soriano', 'accesspress_ray') ?></div>
-								</div>
-							</div>
-						</div>
-				<?php }?>		 
-	</div>			
-</section>
 
 <?php if($accesspress_ray_show_blog == 1){ ?>
 <section id="accesspress-blog">
