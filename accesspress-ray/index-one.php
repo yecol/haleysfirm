@@ -76,7 +76,7 @@ $accesspress_ray_blog_title = $accesspress_ray_settings['blog_title'];
 			<div id="featured-post-5" class="featured-post">
 
 				<figure class="featured-image">
-				<a href="#"><img src="<?php echo get_template_directory_uri().'/images/demo/feature-i18n.jpg' ?>"></a>
+				<img src="<?php echo get_template_directory_uri().'/images/demo/feature-i18n.jpg' ?>">
 				</figure>
 
 				<div class="featured-content">
@@ -88,7 +88,7 @@ $accesspress_ray_blog_title = $accesspress_ray_settings['blog_title'];
 			<div id="featured-post-6" class="featured-post">
 
 				<figure class="featured-image">
-				<a href="#"><img src="<?php echo get_template_directory_uri().'/images/demo/feature-activity.jpg' ?>"></a>
+				<img src="<?php echo get_template_directory_uri().'/images/demo/feature-activity.jpg' ?>">
 				</figure>
 
 				<div class="featured-content">
@@ -100,7 +100,7 @@ $accesspress_ray_blog_title = $accesspress_ray_settings['blog_title'];
 			<div id="featured-post-7" class="featured-post">
 
 				<figure class="featured-image">
-				<a href="#"><img src="<?php echo get_template_directory_uri().'/images/demo/feature-teach.jpg' ?>"></a>
+				<img src="<?php echo get_template_directory_uri().'/images/demo/feature-teach.jpg' ?>">
 				</figure>
 
 				<div class="featured-content">
@@ -112,7 +112,7 @@ $accesspress_ray_blog_title = $accesspress_ray_settings['blog_title'];
 			<div id="featured-post-8" class="featured-post">
 
 				<figure class="featured-image">
-				<a href="#"><img src="<?php echo get_template_directory_uri().'/images/demo/feature-camp.jpg' ?>"></a>
+				<img src="<?php echo get_template_directory_uri().'/images/demo/feature-camp.jpg' ?>">
 				</figure>
 
 				<div class="featured-content">
@@ -134,7 +134,6 @@ $accesspress_ray_blog_title = $accesspress_ray_settings['blog_title'];
 							if( $show_fontawesome_icon == 0 ){
 							?>
 							<figure class="featured-image">
-								<a href="<?php the_permalink(); ?>">
 									<?php 							
 									if( has_post_thumbnail()){
 									$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'accesspress-ray-featured-thumbnail', false ); 
@@ -144,7 +143,6 @@ $accesspress_ray_blog_title = $accesspress_ray_settings['blog_title'];
 									<img src="<?php echo get_template_directory_uri(); ?>/images/demo/featured-fallback.jpg" alt="<?php the_title(); ?>">
 									<?php } 
 									?>
-								</a>
 							</figure>
 							<?php } ?>	
 
@@ -161,9 +159,6 @@ $accesspress_ray_blog_title = $accesspress_ray_settings['blog_title'];
 							<div class="featured-content">
 								<h2 class="featured-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 								<p><?php echo accesspress_ray_excerpt( get_the_content() , 160 ) ?></p>
-								<?php if(!empty($accesspress_ray_settings['featured_post_readmore'])){?>
-								<a href="<?php the_permalink(); ?>" class="view-more"><?php echo esc_attr($accesspress_ray_settings['featured_post_readmore']); ?></a>
-								<?php } ?>
 							</div>
 						<?php endwhile;
 						wp_reset_postdata(); ?>
@@ -182,7 +177,6 @@ $accesspress_ray_blog_title = $accesspress_ray_settings['blog_title'];
 							if( $show_fontawesome_icon == 0 ){
 							?>
 							<figure class="featured-image">
-								<a href="<?php the_permalink(); ?>">
 									<?php 							
 									if( has_post_thumbnail()){
 									$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'accesspress-ray-featured-thumbnail', false ); 
@@ -192,7 +186,6 @@ $accesspress_ray_blog_title = $accesspress_ray_settings['blog_title'];
 									<img src="<?php echo get_template_directory_uri(); ?>/images/demo/featured-fallback.jpg" alt="<?php the_title(); ?>">
 									<?php } 
 									?>
-								</a>
 							</figure>
 							<?php } ?>	
 
@@ -209,9 +202,6 @@ $accesspress_ray_blog_title = $accesspress_ray_settings['blog_title'];
 							<div class="featured-content">
 								<h2 class="featured-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 								<p><?php echo accesspress_ray_excerpt( get_the_content() , 160 ) ?></p>
-								<?php if(!empty($accesspress_ray_settings['featured_post_readmore'])){?>
-								<a href="<?php the_permalink(); ?>" class="view-more"><?php echo esc_attr($accesspress_ray_settings['featured_post_readmore']); ?></a>
-								<?php } ?>
 							</div>
 						<?php endwhile;
 						wp_reset_postdata(); ?>
@@ -230,7 +220,6 @@ $accesspress_ray_blog_title = $accesspress_ray_settings['blog_title'];
 							if( $show_fontawesome_icon == 0 ){
 							?>
 							<figure class="featured-image">
-								<a href="<?php the_permalink(); ?>">
 									<?php 							
 									if( has_post_thumbnail()){
 									$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'accesspress-ray-featured-thumbnail', false ); 
@@ -240,7 +229,6 @@ $accesspress_ray_blog_title = $accesspress_ray_settings['blog_title'];
 									<img src="<?php echo get_template_directory_uri(); ?>/images/demo/featured-fallback.jpg" alt="<?php the_title(); ?>">
 									<?php } 
 									?>
-								</a>
 							</figure>
 							<?php } ?>	
 
@@ -257,9 +245,6 @@ $accesspress_ray_blog_title = $accesspress_ray_settings['blog_title'];
 							<div class="featured-content">
 								<h2 class="featured-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 								<p><?php echo accesspress_ray_excerpt( get_the_content() , 160 ) ?></p>
-								<?php if(!empty($accesspress_ray_settings['featured_post_readmore'])){?>
-								<a href="<?php the_permalink(); ?>" class="view-more"><?php echo esc_attr($accesspress_ray_settings['featured_post_readmore']); ?></a>
-								<?php } ?>
 							</div>
 						<?php endwhile;
 						wp_reset_postdata(); ?>
@@ -276,7 +261,6 @@ $accesspress_ray_blog_title = $accesspress_ray_settings['blog_title'];
 							if( $show_fontawesome_icon == 0 ){
 							?>
 							<figure class="featured-image">
-								<a href="<?php the_permalink(); ?>">
 									<?php 							
 									if( has_post_thumbnail()){
 									$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'accesspress-ray-featured-thumbnail', false ); 
@@ -284,7 +268,6 @@ $accesspress_ray_blog_title = $accesspress_ray_settings['blog_title'];
 									<img src="<?php echo esc_url($image[0]); ?>" alt="<?php the_title(); ?>">
 									<?php } 
 									?>
-								</a>
 							</figure>
 							<?php } ?>	
 
@@ -301,9 +284,6 @@ $accesspress_ray_blog_title = $accesspress_ray_settings['blog_title'];
 							<div class="featured-content">
 								<h2 class="featured-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 								<p><?php echo accesspress_ray_excerpt( get_the_content() , 160 ) ?></p>
-								<?php if(!empty($accesspress_ray_settings['featured_post_readmore'])){?>
-								<a href="<?php the_permalink(); ?>" class="view-more"><?php echo esc_attr($accesspress_ray_settings['featured_post_readmore']); ?></a>
-								<?php } ?>
 							</div>
 						<?php endwhile;
 						wp_reset_postdata(); ?>

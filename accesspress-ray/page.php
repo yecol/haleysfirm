@@ -23,13 +23,7 @@ $post_class = get_post_meta( $post_id, 'accesspress_ray_sidebar_layout', true );
 <div class="ak-container">
 
 <div class="inner-pages-wrapper clearfix">
-
-<?php 
-	if ($post_class=='both-sidebar') { ?>
-		<div id="primary-wrap" class="clearfix"> 
-	<?php }
-?>
-	<div id="primary" class="content-area">1111
+	<div id="primary" class="content-area yl-post-main">
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -47,15 +41,6 @@ $post_class = get_post_meta( $post_id, 'accesspress_ray_sidebar_layout', true );
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php 
-get_sidebar('left'); 
-
-	if ($post_class=='both-sidebar') { ?>
-		</div> 
-	<?php }
-
-get_sidebar('right'); ?>
 </div>
 </div>
 <?php get_footer(); ?>
