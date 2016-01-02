@@ -19,29 +19,30 @@ $accesspress_ray_settings = get_option( 'accesspress_ray_options', $accesspress_
 		<div id="top-footer">
 		<div class="ak-container">
 			<div class="footer1 footer">
-				<?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
-					<?php dynamic_sidebar( 'footer-1' ); ?>
-				<?php endif; ?>	
 			</div>
 
 			<div class="footer2 footer">
-				<?php if ( is_active_sidebar( 'footer-2' ) ) : ?>
-					<?php dynamic_sidebar( 'footer-2' ); ?>
-				<?php endif; ?>	
+
+			<aside id="categories-4" class="yb-footer-title"><h3 class="widget-title">联系信息</h3>
+				<ul>
+					<li class="cat-item yb-footer-item">联系人： 蒋老师</li>
+					<li class="cat-item yb-footer-item">info@haleysfirm.com</li>
+				</ul>
+				</aside>
 			</div>
 
 			<div class="clearfix hide"></div>
 
 			<div class="footer3 footer">
-				<?php if ( is_active_sidebar( 'footer-3' ) ) : ?>
-					<?php dynamic_sidebar( 'footer-3' ); ?>
-				<?php endif; ?>	
+				<aside id="categories-4" class="yb-footer-title"><h3 class="widget-title">本公司经英国大使馆注册认证</h3>
+				<ul>
+					<li class="cat-item yb-footer-item"><img src="<?php echo get_template_directory_uri().'/images/demo/bc.png' ?>"></li>
+				</ul>
+				</aside>
 			</div>
 
 			<div class="footer4 footer">
-				<?php if ( is_active_sidebar( 'footer-4' ) ) : ?>
-					<?php dynamic_sidebar( 'footer-4' ); ?>
-				<?php endif; ?>	
+				
 			</div>
 		</div>
 		</div>

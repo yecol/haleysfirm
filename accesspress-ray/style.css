@@ -804,7 +804,6 @@ body.boxed-layout{
 	margin: 0 auto;
 }
 .roboto-light{
-	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	text-align: center;
 	text-transform: uppercase;
@@ -1104,7 +1103,7 @@ TOP-FOOTER
 	display: none;
 }
 #top-footer{
-	background: #666;
+	background: #f2f2f2;
 	color:#ffffff;
 	font-size: 14px;
 	font-weight: 300;
@@ -1115,14 +1114,13 @@ TOP-FOOTER
 }
 #top-footer .footer {
     float: left;
-    min-height: 200px;
+    min-height: 150px;
 }
 
 #top-footer .footer .widget{
 	margin-bottom: 0;
 	margin-right: 25px;
 	padding-right: 25px;
-	background: url(images/footer-bg.png) repeat-y scroll right top;
 }
 #top-footer .footer4 .widget{
 	margin-right: 0;
@@ -1133,8 +1131,7 @@ TOP-FOOTER
 	width: 25%;
 }
 #top-footer .footer .widget-title{
-	color:#ffffff;
-	font-family: 'Roboto', sans-serif;
+	color:black;
 	font-size: 22px;
 	font-weight: 300;
 	margin-bottom: 20px;
@@ -1151,8 +1148,6 @@ TOP-FOOTER
 	position: relative;
 }
 #top-footer .textwidget ul li:before {
-    content: "\f058 ";
-    font-family: FontAwesome;
     left: 0;
     margin-right: 10px;
     position: absolute;
@@ -1557,7 +1552,6 @@ BUSINESS-ACTIVITIES
     font-size: 24px;
     margin-bottom: 10px;
     font-weight: 300;
-    font-family: "Roboto",sans-serif;
 }
 .business-activities-wrapper{
 	margin-left: -1.33%;
@@ -2171,4 +2165,18 @@ Galleries
 #primary.yb-content-table{
 	margin: auto;
 	float: none;
+}
+
+.yb-footer-title{
+	color: #2e313d;
+}
+
+.yb-footer-title ul{
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+.yb-footer-item{
+	color: #2e313d;
+	list-style: none;
 }
